@@ -1,0 +1,148 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+.App {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+small {
+    color: var(--text-dimmer)!important;
+    font-size: 12px!important;
+}
+
+.active-navigation {
+    background-color: none;
+    color: var(--primary-color);
+}
+
+.active-navigation:hover {
+    background-color: var(--nav-background-color);
+    color: var(--text-color);
+}
+
+/* Auth layout */
+.auth-layout {
+  background: #f2efff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.auth-panel-right {
+  width: 50%;
+  background: #f9f7ff;
+}
+
+.auth-logo {
+  width: 1000px;
+}
+
+.auth-card {
+  padding: 32px 28px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.auth-panel-left {
+  flex: 1;
+  background: #ece7ff;
+  position: relative;
+}
+
+.auth-hero-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-hero-circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 999px;
+  position: relative;
+}
+
+.auth-hero-circle-blur {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(22px);
+  z-index: 10;
+}
+
+@media (max-width: 767.98px) {
+  .auth-card {
+    padding: 24px 20px;
+  }
+}
+
+/* Auth typography & buttons */
+.auth-card h2 {
+  font-size: 1.6rem;
+}
+
+.auth-card p {
+  font-size: 0.9rem;
+}
+
+.auth-card a {
+  color: #16a34a;
+}
+
+.auth-card a:hover {
+  color: #15803d;
+}
+
+.auth-primary-btn {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+.auth-primary-btn:hover {
+  background: #15803d;
+  border-color: #15803d;
+}
+
+/* Auth login specifics */
+.auth-login {
+  max-width: 420px;
+}
+
+.auth-login-subtitle {
+  margin-bottom: 2rem;
+}
+
+.auth-login .form-label {
+  font-size: 0.85rem;
+  margin-bottom: 0.35rem;
+}
+
+.auth-login .form-control {
+  font-size: 0.92rem;
+  padding: 0.7rem 0.85rem;
+}
+
+.auth-login-meta {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem !important;
+}
+
+.auth-login-meta .form-check-label {
+  font-size: 0.8rem;
+}
+
+/* (divider removed because OAuth is not used on admin login) */
